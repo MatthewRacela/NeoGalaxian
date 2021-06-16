@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7412337215057513622}
   - component: {fileID: 7412337215057513621}
   - component: {fileID: 825953343065876889}
-  - component: {fileID: 8592605970012332826}
+  - component: {fileID: -5690304632238124332}
   m_Layer: 0
   m_Name: BeamPew
   m_TagString: Untagged
@@ -97,6 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb799baf44e7b54ca3d56703fa2c0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DTime: 1
+  ttime: 0
 --- !u!70 &7412337215057513621
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -134,7 +136,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8592605970012332826
+--- !u!114 &-5690304632238124332
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

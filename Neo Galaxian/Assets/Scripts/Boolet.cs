@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Boolet : MonoBehaviour
 {
+    public GameObject GM;
+    PointSystem PS;
+
     public float DTime = 1.0f, ttime = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
+        GM = GameObject.FindWithTag("GameManager");
+        PS = GM.GetComponent<PointSystem>();
         ttime = 0;
     }
 
@@ -30,6 +35,7 @@ public class Boolet : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Destroy(gameObject);
+            PS.points += 10;
         }
     }
 }
